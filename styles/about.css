@@ -97,7 +97,6 @@ nav ul li.active a{color:#00994d; border-bottom:3px solid #00994d;}
 .first-section{
     height:100%;
     padding:100px 0px 50px;
-    /*background-image: linear-gradient(to top right, #00ff7f, #4169e1);*/
 }
 
 .tech-demystified{
@@ -142,7 +141,7 @@ nav ul li.active a{color:#00994d; border-bottom:3px solid #00994d;}
     box-shadow:0px 0px 10px #006633;
     border-radius: 5px;
     max-width:40%;
-    height:150px;
+    min-height:150px;
     margin:20px auto 50px;
     display:block;
 }
@@ -213,21 +212,64 @@ nav ul li.active a{color:#00994d; border-bottom:3px solid #00994d;}
     text-decoration:none;
 }
 
-.fourth-section{height:100%; margin:20px 0px;}
+.fourth-section{height:100%; margin:20px 0px 20px; flex-direction: column;}
 
-.pclist{
-    display:flex;
-    justify-content:center;
-    list-style-type: none;
+.tab {
+    display:block;
+    margin:0 auto;
 }
-
-.pclist li{
-    padding:0px 150px;
-    font-size:30px;
-    font-weight: 700;
-    color:#008040;
+  
+.tab button {
+    background-color: inherit;
+    outline: none;
     cursor: pointer;
+    padding: 5px 30px;
+    transition: box-shadow 0.3s;
+    font-size: 17px;
+    margin:0px 50px;
+    font-size:25px;
+    letter-spacing:1px;
+    color: #b3b3b3;
+    border:1px solid #b3b3b3;
+    border-radius:5px;
+    font-weight: 500;
 }
+  
+.tab button.active, .tab button:hover {
+    color: #666;
+    border:1px solid #666;
+    border-radius:5px;
+    box-shadow: 0px 0px 11px rgba(0,0,0,.3);
+}
+
+.tabcontent{
+    display:none;
+    margin:5%;
+    -webkit-animation: fadeEffect 1.5s;
+    animation: fadeEffect 1.5s;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+  
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+  
+.tabcontent img{
+    margin:0px 0px 20px 20px;
+}
+
+.topright {
+    float: right;
+    cursor: pointer;
+    font-size: 40px;
+  }
+  
+.topright:hover {color:#008040;}
 
 .footer{
     align-content: center;
@@ -311,7 +353,7 @@ nav ul li.active a{color:#00994d; border-bottom:3px solid #00994d;}
     color:#fff;
 }
 
-.show {
+.show{
     visibility: visible;
     opacity: 1;
     transition:all 2s ease;
@@ -322,3 +364,182 @@ nav ul li.active a{color:#00994d; border-bottom:3px solid #00994d;}
     opacity: 0;
 }
 
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (max-width: 767px) {
+    [class*="col-"] {
+        width: 100%;
+        flex-wrap:wrap;
+    }
+
+    .header{padding-left:0px;}
+
+    .logo{margin:0px 0px 10px;}
+
+    .hamburger{
+        display:inline;
+        margin-left:auto;
+        position:absolute;
+        top:20%;
+        right:5%;
+        color:#00994d;
+        cursor: pointer;
+    }
+
+    .nav ul{
+        width:100%;
+        height:100vh;
+        position:fixed;
+        flex-direction: column;
+        padding:50px 0px; margin:0px;
+        background-color: rgba(0, 128, 64, 0.9);
+        left:0px;
+        clip-path:circle(100px at 90% -30%);
+        -webkit-clip-path:circle(100px at 90% -30%);
+        transition: all 1.5s ease;
+    }
+
+    .nav ul.open{
+        clip-path:circle(1500px at 90% -30%);
+        -webkit-clip-path:circle(1500px at 90% -30%);
+    }
+
+    .nav ul li {padding:25px;}
+
+    .nav ul li a{color:#ccffee; letter-spacing:1px;}
+
+    .nav ul a button{
+        margin:25px 30px;
+        border:1px solid #ccffee;
+        color:#ccffee;
+        padding-bottom:0px;
+    }
+    
+    .nav ul a button:active{
+     background-color:#006633;
+     border:none;
+    }
+
+    .nav ul li.active a, .nav ul li a:hover{ 
+        color:#ccffee;
+        border-bottom:3px solid #ccffee;
+    }
+
+    .first-section{padding:80px 0px 50px;}
+
+    .tech-demystified{
+        position:absolute;
+        font-size:50px;
+        line-height:2;
+        opacity: 0.2;
+        letter-spacing:5px;
+    }
+
+    .about p{padding:5px;}
+
+    #demystified{padding-left:0px;}
+
+    .vision, .mission{
+        max-width:100%;
+        margin:0px 20px 50px;
+    }
+
+    .mv{display:flex; margin:0px 0px 0px; width:100%;}
+
+    .vision i, .mission i{margin:5px 0px; font-size:35px;}
+
+    .vision i{margin-top:2px;}
+
+    .vision h3, .mission h3{
+        text-align:left;
+        width:100%;
+        font-size:25px;
+        padding-top:5px;
+    }
+
+    .vision p, .mission{font-size:16px;}
+
+    .tab button {margin:5px;}
+
+    .tabcontent img{
+        display:block;
+        margin:10px auto 0px;
+    }
+
+    .contact-info, .location, .posts{margin-left: 15px;}
+
+    .contact-info img{margin:0px;}
+    
+    .contact-info p{padding:20px 0px 0px;}
+    
+    .contact-icon, .contact-icon a{padding:0px 15px 0px 0px;}
+
+    .posts h6, .posts p{padding-left:0px;}
+
+    .posts hr{
+        margin-left:0px;
+        width:80%;
+    }
+
+    .top-link {right: 4%;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .header-section{min-height:50vh;}
+
+    .header{padding-left:0px;}
+
+    .logo{margin:0px 0px 10px;}
+
+    .hamburger{
+        display:inline;
+        margin-left:auto;
+        position:absolute;
+        top:20%;
+        right:5%;
+        color:#00994d;
+        cursor: pointer;
+    }
+
+    .nav ul{
+        width:100%;
+        height:100vh;
+        position:fixed;
+        flex-direction: column;
+        padding:50px 20px; margin:30px 0px 0px;
+        background-color: rgba(0, 128, 64, 0.9);
+        left:0px;
+        clip-path:circle(100px at 90% -30%);
+        -webkit-clip-path:circle(100px at 90% -30%);
+        transition: all 1.5s ease;
+    }
+
+    .nav ul.open{
+        clip-path:circle(2500px at 90% -30%);
+        -webkit-clip-path:circle(2500px at 90% -30%);
+    }
+
+    .nav ul li {padding:25px;}
+
+    .nav ul li a{color:#ccffee; letter-spacing:1px;}
+
+    .nav ul a button{
+        margin:25px 30px;
+        border:1px solid #ccffee;
+        color:#ccffee;
+        padding-bottom:0px;
+    }
+
+    .nav ul a button:active{
+        background-color:#006633;
+        border:none;
+    }
+   
+    .nav ul li.active a, .nav ul li a:hover{ 
+        color:#ccffee;
+        border-bottom:3px solid #ccffee;
+    }
+
+    .first-section{padding:80px 0px 50px;}
+
+    .about p{padding:5px;}
+}

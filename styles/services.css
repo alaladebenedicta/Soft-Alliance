@@ -27,14 +27,8 @@ body{
 .col-md-11{width:91.67%; box-sizing:border-box;}
 .col-md-12{width:100%; box-sizing:border-box;}
 
-.header-section{
-    position: relative;
-    min-height:90vh;
-    background-image: linear-gradient(to top right, #00ff7f, #4169e1)
-}
-
 .header{
-    margin:0px;
+    margin:0px 0px 50px;
     min-height:30px;
     position: fixed;
     padding:10px 0px 0px 20px;
@@ -71,10 +65,10 @@ body{
 .nav ul li a:hover{
     color:#00994d; 
     border-bottom:3px solid #00994d;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
 }
 
-.nav ul a button, .more-products a button{
+.nav ul a button{
     height:27px;
     width:80px;
     border:1px solid #006633;
@@ -100,231 +94,18 @@ body{
 
 nav ul li.active a{color:#00994d; border-bottom:3px solid #00994d;}
 
-.contact{
-    position: absolute;
-    top:30%;
-    left:25%;
-    padding:0px 5px;
-}
+.first-section{padding:100px 0px 30px; background-color:#e6fff2;}
+.second-section{padding:30px 0px 30px; background-color:#ccffe6;}
+.third-section{padding:30px 0px 30px; background-color:#e6fff2;}
 
-.contact p{
-    text-align: center;
-    font-size:35px;
-    color:#fff;
-    font-weight:100;
-}
-
-.contact a{
-    text-decoration:none;
-}
-
-.contact a button{
-    height:40px;
-    width:120px;
-    display: block;
-    margin: 30px auto;
-    border:1px solid #fff;
-    color:#fff;
-    font-size:17px;
-    letter-spacing: 1px;
-    font-weight:100;
-    background-color:transparent;
-    cursor: pointer;
-    outline: none;
-}
-
-.contact a button:hover{
-    height:45px;
-    width:125px;
-    font-weight: 300;
-    transition:0.4s ease-in;
-}
-
-.counter-section{
-    margin:0px;
-    position: absolute;
-    top:72%;
-    right:0%;
-    justify-content:center;
-}
-
-.count-container{
-    min-height:250px;
-    max-width:20%;
-    background-color:#fff;
-    margin:30px;
-    border:1px solid #d9d9d9;
-    border-radius:10px;
-}
-
-.circle {
-    display:block;
-    width:100px;
-    margin:30px auto;
-    position: relative;
-    text-align: center;
-    line-height: 1.2;
-}
-  
-.circle strong {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 30px;
-}
-  
-.circle strong i {
-    font-style: normal;
-    font-size: 20px;
-}
-
-.count-container p{
-    font-size:20px;
-    line-height:1.5;
-    margin-top:20px;
-    font-weight:400;
-    text-align:center;
-    color:#333;
-}
-
-.your-needs{
-    margin-top:20%;
-    height:100%;
-}
-
-.your-needs button{
-    height:50px;
-    width:450px;
-    border:none;
-    border-radius:50px;
-    display: block;
-    margin:50px auto;
-    text-align: center;
-    background-color:#00994d;
-    color:#fff;
-    font-size:25px;
-    font-weight: 400;
-    cursor: default;
-    box-shadow:0px 1px 10px #4d4d4d;
-    outline:none;
-}
-
-.your-needs ul li{
-    list-style-type:none;
-    padding:20px;
-}
-
-.left{text-align:right;}
-
-.left i, .more-products i{display: inline; vertical-align:middle;}
-
-.needs{margin-top:10px;}
-
-.needs li a{text-decoration: none;}
-
-.needs a:hover i{font-size:23px;}
-
-.needs i{
-    font-size:20px;
-    color:#00b359;
-}
-
-.needs h4{
-    font-size:22px;
-    color:#666;
-}
-
-.needs p{
-    font-size:13px;
-    color:#4d4d4d;
-    letter-spacing: 0px;
-}
-
-.phone{max-width:28%; margin:40px 0px 20px;}
-
-.products{
-    height:100%;
-    margin:30px 0px 0px;
-    background-color: #e6fff2;
-    justify-content: center;
-}
-
-.products h3{
-    text-align: center;
-    color:#008040;
-    padding:20px 0px 40px;
-    font-size:28px;
-    letter-spacing: 0px;
-}
-
-.product-container img, .product-container h6, .product-container p, .product-container a{
-    width:90%;
+.description{padding:15px; color:#333;}
+.description ul{padding:20px;}
+.description p, .description ul{font-size:17px;}
+.description h3{font-size:25px; font-weight: 500; padding-bottom:10px;}
+.first-section img, .second-section img, .third-section img{
     display:block;
     margin:0 auto;
-    background-color:#fff;
-}
-
-.product-container h6, .product-container p, .product-container a{padding:10px 20px;}
-
-.product-container h6, .product-container p{
-    color:#4d4d4d;
-    font-size: 15px;
-}
-
-.product-container a{
-    font-size:15px;
-    color: #00cc66;
-    text-decoration:none;
-}
-.product-container a:hover{text-decoration:underline;}
-
-.more-products a{text-decoration:none;}
-
-.more-products a button{
-    display:block;
-    width:180px;
-    height:45px;
-    margin:30px auto;  
-}
-
-.testimonials{
-    height:100%;
-    background-color:#008040;
-}
-
-.testimonial{
-    width:60%;
-    display: block;
-    margin:0 auto;
-}
-
-.testimonials h3, .testimonial p{
-    text-align: center;
-    color:#e6fff2;
-    padding:0px 15px;
-}
-
-.testimonial h3{
-    padding:30px 0px 10px;
-    font-size:30px;
-}
-
-.testimonial p{
-    font-size: 17px;
-    font-weight: 300;
-}
-
-.carousel-inner { padding-bottom:200px; }
-.carousel-caption { bottom:-180px; }
-
-.carousel-item img{
-    display: block;
-    margin:10px auto;
-    width:25%;
-    border-radius: 50%;
+    width:80%;
 }
 
 .footer{
@@ -409,7 +190,7 @@ nav ul li.active a{color:#00994d; border-bottom:3px solid #00994d;}
     color:#fff;
 }
 
-.show {
+.show{
     visibility: visible;
     opacity: 1;
     transition:all 2s ease;
@@ -420,11 +201,11 @@ nav ul li.active a{color:#00994d; border-bottom:3px solid #00994d;}
     opacity: 0;
 }
 
-
 /* Extra small devices (phones, 768px and down) */
 @media only screen and (max-width: 767px) {
     [class*="col-"] {
         width: 100%;
+        flex-wrap:wrap;
     }
 
     .header{padding-left:0px;}
@@ -480,47 +261,6 @@ nav ul li.active a{color:#00994d; border-bottom:3px solid #00994d;}
         border-bottom:3px solid #ccffee;
     }
 
-    .contact{left:0%; top:25%;}
-
-    .count-container{
-        max-width:70%;
-        margin:20px;
-    }
-
-    .your-needs{margin-top:220%;}
-
-    .your-needs button{
-        height:50px;
-        width:300px;
-        margin:20px auto;
-        font-size:22px;
-    }
-
-    .needs i{font-size:23px;}
-
-    .phone{max-width:50%; margin:0px auto 10px;}
-
-    .products h3{font-size:25px; padding:30px 5px 0px;}
-
-    .product-container{margin-top: 30px;}
-
-    .testimonial{width:90%; height:100%;}
-    
-    .testimonial h3{font-size:28px;}
-    
-    .testimonial p{
-        font-size: 17px;
-        padding:0px;
-    }
-
-    .carousel-inner { padding-bottom:300px; }
-    .carousel-caption { bottom:-280px; }
-    
-    .carousel-item img{
-        margin:10px auto;
-        width:50%;
-    }
-
     .contact-info, .location, .posts{margin-left: 15px;}
 
     .contact-info img{margin:0px;}
@@ -539,19 +279,6 @@ nav ul li.active a{color:#00994d; border-bottom:3px solid #00994d;}
     .top-link {right: 4%;}
 }
 
-
-/* Extra small devices (phones, 768px and down with height more than 731px) */
-@media only screen and (max-height: 600px) and (max-width: 768px) {
-    .your-needs{margin-top:250%;}
-    .your-needs button{
-        width:280px;
-        font-size:20px;
-    }
-    .carousel-inner { padding-bottom:360px; }
-    .carousel-caption { bottom:-340px; }
-}
-  
-/* Medium devices (landscape tablets, width between 768px and 1024px) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .header-section{min-height:50vh;}
 
@@ -607,56 +334,4 @@ nav ul li.active a{color:#00994d; border-bottom:3px solid #00994d;}
         color:#ccffee;
         border-bottom:3px solid #ccffee;
     }
-
-    .contact{left:7%; top:30%;}
-
-    .counter-section{top:40%;}
-
-    .count-container{
-        max-width:30%;
-        margin:5px;
-    }
-
-    .col-s-12{min-width:100%;}
-    .phone{min-width:50%; display:block; margin:0 auto;}
-
-    .col-s-6{
-        min-width:50%;
-        margin:20px 0px;
-    }
-
-    .carousel-item img{width:40%;}
-    
-    .carousel-inner { padding-bottom:320px;}
-    .carousel-caption { bottom:-300px;}
 }
-
-/* medium devices (phones, 768px and above with height more than 900px) */
-@media only screen and (height: 1024px) and (width: 768px) {
-    .your-needs{margin-top:30%;}
-    .col-s-12{min-width:100%;}
-    .phone{min-width:50%;}
-    .carousel-inner { padding-bottom:350px; }
-    .carousel-caption { bottom:-300px;}
-    .posts a{padding:5px;}
-}
- 
-@media only screen and (width:1024px){.contact{left:18%;}}
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-
-
